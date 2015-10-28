@@ -28,4 +28,8 @@ public class controlTextField {
         canPutDot=true;
     }
     
+    public void inputedSymbol(JTextField textField, String symbol){
+        textField.setText(textField.getText() +  symbol);
+    }
+     
 }
