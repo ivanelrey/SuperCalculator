@@ -32,6 +32,16 @@ public class controlTextField {
         
         canPutDot=true;
     }
+      public void inputedClearPrevious(JTextField textField)
+    {
+        if(textField.getText().endsWith("."))
+        {
+            textField.setText(textField.getText().substring(0,textField.getText().length() -1 ));
+            canPutDot=true;
+        }
+        else
+            textField.setText(textField.getText().substring(0,textField.getText().length() -1 ));
+    }
     
     public void inputedSymbol(JTextField textField, String symbol){
         textField.setText(textField.getText() +  symbol);
